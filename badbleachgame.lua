@@ -28,7 +28,7 @@ toxicbleach:Button("Use Code", "Uses codes", function()
     }
     game:GetService("ReplicatedStorage").Remotes.Code:InvokeServer(unpack(args))
 
-    Flux:Notification("Currently disabled", "Confirm")
+    --Flux:Notification("Currently disabled", "Confirm")
 end)
 toxicbleach:Button("Hide the White Screen while Meditating", "MOST USEFUL THING (Removes white screen while meditating)", function()
     game.Players.LocalPlayer.PlayerGui.Shared.Meditate.White.BackgroundTransparency = 1
