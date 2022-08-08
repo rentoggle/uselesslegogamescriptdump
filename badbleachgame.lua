@@ -22,12 +22,12 @@ local toxicbleach = win:Tab("disabled bleach", "http://www.roblox.com/asset/?id=
 local data = game.Players.LocalPlayer:WaitForChild("PlayerData")
 toxicbleach:Label("QoL Functions")
 toxicbleach:Line()
---[[toxicbleach:Button("Use Code", "Uses codes", function()
+toxicbleach:Button("Use Code", "Uses codes", function()
     local args = {
-        [1] = "goofybaguettefish"
+        [1] = "ExtraFries"
     }
     game:GetService("ReplicatedStorage").Remotes.Code:InvokeServer(unpack(args))
---]]
+
     Flux:Notification("Currently disabled", "Confirm")
 end)
 toxicbleach:Button("Hide the White Screen while Meditating", "MOST USEFUL THING (Removes white screen while meditating)", function()
