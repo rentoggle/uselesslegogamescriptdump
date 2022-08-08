@@ -46,6 +46,11 @@ toxicbleach:Button("Check Spiritual Pressure", "Shows you the value of your SP",
     local SP = data.SpiritualPressure.Value
     Flux:Notification("Spiritual Pressure = "..SP, "Confirm")
 end)
+toxicbleach:Button("Check Zanpakuto Reputation", "Shows you the value of your sword rep", function()
+    local SP = data.ZanpakutoRep.Value
+    Flux:Notification("Zanpakuto Reputation = "..SP, "Confirm")
+end)
+
 
 local settings = win:Tab("Settings", "http://www.roblox.com/asset/?id=6022668955")
 settings:Label("w.i.p")
