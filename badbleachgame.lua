@@ -22,6 +22,12 @@ local toxicbleach = win:Tab("disabled bleach", "http://www.roblox.com/asset/?id=
 local data = game.Players.LocalPlayer:WaitForChild("PlayerData")
 toxicbleach:Label("QoL Functions")
 toxicbleach:Line()
+toxicbleach:Button("Use Code", "Uses codes", function()
+    local args = {
+        [1] = "goofybaguettefish"
+    }
+    game:GetService("ReplicatedStorage").Remotes.Code:InvokeServer(unpack(args))
+end)
 toxicbleach:Button("Hide the White Screen while Meditating", "MOST USEFUL THING (Removes white screen while meditating)", function()
     game.Players.LocalPlayer.PlayerGui.Shared.Meditate.White.BackgroundTransparency = 1
     Flux:Notification("Removed the White Screen, you'll need to use this again when you start meditating", "Confirm")
@@ -50,7 +56,6 @@ toxicbleach:Button("Check Zanpakuto Reputation", "Shows you the value of your sw
     local SP = data.ZanpakutoRep.Value
     Flux:Notification("Zanpakuto Reputation = "..SP, "Confirm")
 end)
-
 
 local settings = win:Tab("Settings", "http://www.roblox.com/asset/?id=6022668955")
 settings:Label("w.i.p")
